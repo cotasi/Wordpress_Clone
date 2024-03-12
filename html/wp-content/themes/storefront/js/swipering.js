@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
           clickable: true,
           renderBullet: function (index,className) {
             return `<span class=${className}><span>0${index+1}</span>
-                        <span class="animate"></span>
+                        <span></span>
                     </span>`
         }
         },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },
+        }
         
       });
       
@@ -68,6 +68,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
       });
-
-     /*  document.querySelector('.handheld-navigation').innerHTML = '<button><span class="sr-only">닫기버튼</button>' */
+      
 });
